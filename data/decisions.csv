@@ -1,0 +1,4 @@
+decision,storm,minute,state,towns,setting,uses
+D1,S051,15,signed,T3,C2,15
+D2,S051,35,proposed,T1|T2,C3,35
+D3,S052,89,proposed,T3|T4,C1,89

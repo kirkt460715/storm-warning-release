@@ -1,0 +1,73 @@
+{
+  "tables": {
+    "geography": [
+      "town",
+      "group",
+      "valley"
+    ],
+    "thresholds": [
+      "town",
+      "miss",
+      "nuisance",
+      "lead"
+    ],
+    "options": [
+      "setting",
+      "score_floor"
+    ],
+    "decisions": [
+      "decision",
+      "storm",
+      "minute",
+      "state",
+      "towns",
+      "setting",
+      "uses"
+    ],
+    "weather": [
+      "storm",
+      "phase",
+      "date",
+      "weather_class"
+    ],
+    "truth": [
+      "storm",
+      "town",
+      "incident",
+      "start_low",
+      "start_high",
+      "label",
+      "available_minute"
+    ],
+    "signals": [
+      "storm",
+      "build",
+      "message",
+      "prev",
+      "minute",
+      "towns",
+      "action",
+      "score"
+    ]
+  },
+  "references": [
+    [
+      "truth",
+      "storm",
+      "weather",
+      "storm"
+    ],
+    [
+      "signals",
+      "storm",
+      "weather",
+      "storm"
+    ],
+    [
+      "thresholds",
+      "town",
+      "geography",
+      "town"
+    ]
+  ]
+}
