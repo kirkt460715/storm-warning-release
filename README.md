@@ -6,6 +6,8 @@
 
 - `data/geography.csv`  乡镇和联动组合。group 相同的乡镇在仍有跨乡联合动作时须同时采用可兼容的口径，valley 是地形类别。
   字段为 `town / group / valley`。
+- `data/mutual_actions.csv`  联合响应约定。在相联乡镇采用不同版本时，仍在执行的相同行动须具有共同起止及相容的集合点。历史行动资格在有效期内继续按原记录解释。
+  字段为 `group / action / assembly_point / activation_tolerance_min`。
 - `data/thresholds.csv`  各乡镇的验收界限。miss 和 nuisance 为同类事件中的最大比例，lead 为业务最低提前分钟。候选运行设置由 options 另列。
   字段为 `town / miss / nuisance / lead`。
 - `data/options.csv`  运营允许比较的新版设置。score_floor 是播发所需的置信分值，作用于回放的候选稿；旧版已发消息不受此设置影响。
@@ -17,7 +19,7 @@
 - `data/truth.csv`  按当时可得的核定事实。分钟以过程开始为零点。clear 表示资料完整且无险，pending 尚不能判定。incident 可在相邻乡镇共同出现。
   字段为 `storm / town / incident / start_low / start_high / label / available_minute`。
 - `data/signals.csv`  各版信息在过程中的分钟。issue 首次播报，expand 增加所列地点，raise 更新所列地点级别，partial_end 解除所列地点。身份由天气、版别与稿号限定。
-  字段为 `storm / build / message / prev / minute / towns / action / score`。
+  字段为 `storm / build / message / prev / minute / towns / action / score / assigned_move / assembly_point`。
 
 ## 核对台账
 

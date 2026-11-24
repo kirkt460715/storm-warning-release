@@ -5,6 +5,12 @@
       "group",
       "valley"
     ],
+    "mutual_actions": [
+      "group",
+      "action",
+      "assembly_point",
+      "activation_tolerance_min"
+    ],
     "thresholds": [
       "town",
       "miss",
@@ -47,7 +53,9 @@
       "minute",
       "towns",
       "action",
-      "score"
+      "score",
+      "assigned_move",
+      "assembly_point"
     ]
   },
   "references": [

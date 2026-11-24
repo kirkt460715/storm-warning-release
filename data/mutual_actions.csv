@@ -1,0 +1,3 @@
+group,action,assembly_point,activation_tolerance_min
+G1,move,P1,0
+G2,move,P2,3
